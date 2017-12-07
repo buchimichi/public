@@ -1,0 +1,22 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-width: 320px;
+}
+
+//共通のcss
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.cf{
+}
+
+*,*::before,::after{
+    box-sizing: border-box;
+}

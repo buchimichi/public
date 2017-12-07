@@ -1,0 +1,12 @@
+%cf{
+    &::after{
+    content: "";
+    clear: both;
+    display: block;
+    }
+}
+
+@mixin rem($base:14){
+    font-size: $base + px;
+    font-size: ($base/10) + rem;
+}
