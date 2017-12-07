@@ -1,0 +1,19 @@
+.footer{
+    background-image: url(../../img/footer_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0 24px 28px 24px;
+    &-sns{
+        margin-bottom: 40px;
+        a{
+            text-decoration: none;
+        }
+    }
+    &-copy{
+        small{
+        @include rem(11);
+            font-family: $font-en;
+        }
+    }
+}

@@ -7,10 +7,15 @@
 @import "base/base";
 
 //レイアウト
-
-
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/nav";
+@import "layout/content";
 //パーツ
-
+@import "module/btn";
+@import "module/title";
+@import "module/pagetop";
 
 //ページ
-
+@import "page/index";

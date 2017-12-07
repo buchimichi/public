@@ -4,6 +4,10 @@ html{
 
 body{
     min-width: 320px;
+    color: $color-txt;
+    background-color: $color-base;
+    font-family: $font-jp;
+    @include rem(13);
 }
 
 //共通のcss
@@ -14,9 +18,14 @@ img{
     vertical-align: bottom;
 }
 
-.cf{
-}
-
 *,*::before,::after{
     box-sizing: border-box;
 }
+
+a{
+    color: $color-txt;
+    &:hover{
+        opacity: .5;
+    }
+}
+

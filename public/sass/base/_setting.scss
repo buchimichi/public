@@ -10,3 +10,18 @@
     font-size: $base + px;
     font-size: ($base/10) + rem;
 }
+
+$size-max: 940px;
+$color-base: #000;
+$color-txt: #fff;
+$sp: 768px;
+$pc: 960px;
+$lh-title: 1.1;
+$lh-txt: 1.5;
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+$font-jp: "Noto Sans Japanese","メイリオ","Meiryo",
+"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",verdana,
+Sans-Serif;
+$font-en: 'Press Start 2P',cursive,serif;
+
+
