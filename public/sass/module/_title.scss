@@ -1,0 +1,9 @@
+.section-title{
+    @include rem(20);
+    line-height: $lh-title;
+    font-family: $font-en;
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}

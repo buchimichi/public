@@ -1,14 +1,32 @@
 .gnav{
+    display: none;
+}
+
+@media screen and(min-width:$sp){
+.gnav{
+        display: block;
+    background-color: transparent;
+    margin-bottom: 46px;
     ul{
         display: flex;
     }
     li{
         list-style-type: none;
-        flex: 1 1 25%;
+        flex:0 0 15%;
     }
     a{
         display: block;
         text-align: center;
-        
+        line-height: 57px;
+        @include rem(18);
+        font-family: $font-en;
+        text-decoration: none;
+        background-color: transparent;
+        &:hover {
+            opacity: 0.5;
+            color: #959088;
+        }
+    }
+    
     }
 }
