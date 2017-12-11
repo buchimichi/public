@@ -1,6 +1,7 @@
-  <!DOCTYPE html>
-  <html lang="ja">
-    <head>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
     <meta charset="utf-8">
     <title>Masamichi Iwabuchi Portfolio</title>
     <meta name="description" content="ページの説明">
@@ -14,9 +15,9 @@
     <div class="wrapper">
         <header class="header">
             <div class="inner">
-                <div class="header-logo">
+                <h1 class="header-logo">
                     <p> Masamichi Iwabuchi Portforio Site</p>
-                </div>
+                </h1>
             </div>
         </header>
         <nav class="gnav">
@@ -27,16 +28,18 @@
                 <li><a href="#">contact</a></li>
             </ul>
         </nav>
-        
+
         <main class="main">
-            <div class="inner">
-               <img src="img/sp_block.png" alt="青ブロック">
+            <div class="block"></div>
+            
+
                 <section class="about top-content">
+                   <div class="inner">
                     <div class="section-title">About</div>
                     <div class="about-left">
-                        <p>名前　　　岩渕　正道</p>
+                        <p>名前　　岩渕　正道</p>
                         <p>1985年生まれ。千歳市出身。</p>
-                        <p>経歴</p>　 　
+                        <p>経歴</p>
                         <p>20代は工場内作業に明け暮れていましたが、 次第にIT関係の仕事に興味を持つようになり、アラサーを好機に転職を計ることを決めました。 2017年7月よりPC・スマホ クリエイト科に入校。
                         </p>
                     </div>
@@ -45,13 +48,21 @@
                             <img src="img/kaomae.png" alt="顔正面">
                         </div>
                         <ul>
-                            <li><a href="#" class="btn btn-about"></a></li>
-                            <li><a href="#" class="btn btn-about"></a></li>
-                            <li><a href="#" class="btn btn-about"></a></li>
+                            <li>
+                                <a href="#" class="btn btn-about"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-about"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-about"></a>
+                            </li>
                         </ul>
+                    </div>
                     </div>
                 </section>
                 <section class="skill top-content">
+                   <div class="inner">
                     <div class="section-title">Skill</div>
                     <div class="skill-left">
                         <p>資格・免許<br>普通自動車免許</p>
@@ -66,77 +77,90 @@
                             <img src="img/jq.png" alt="jq">
                         </div>
                     </div>
+
+                
+                    </div>
                 </section>
-                <img src="img/sp_block.png" alt="青ブロック">
+                <div class="block"></div>
                 <section class="work top-content">
-                   <div class="inner">
-                    <div class="section-title">Work</div>
-                    <div class="work-list">
-                        <ul>
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">sample1</a></li>
-                            <li><a href="#">sample2</a></li>
-                            <li><a href="#">sample3</a></li>
-                        </ul>
-                    </div>
-                    <div class="work-listimg">
-                        <ul>
-                            <li><img src="img/work_yellow.png" alt="黄色"></li>
-                            <li><img src="img/work_blue.png" alt="青色"></li>
-                            <li><img src="img/work_red.png" alt="赤色"></li>
-                            <li><img src="img/work_blue.png" alt="青色"></li>
-                            <li><img src="img/work_red.png" alt="赤色"></li>
-                            <li><img src="img/work_yellow.png" alt="黄色"></li>
-                        </ul>
-                    </div>
-                    <p>Caming soon...</p>
+
+                    <div class="inner">
+                        <div class="section-title">Work</div>
+                        <div class="work-list">
+                            <ul>
+                                <li><a href="#" class="all">All</a></li>
+                                <li><a href="#">sample1</a></li>
+                                <li><a href="#">sample2</a></li>
+                                <li><a href="#">sample3</a></li>
+                            </ul>
+                        </div>
+                        <div class="work-listimg">
+                            <ul>
+                                <li><img src="img/work_yellow.png" alt="黄色"></li>
+                                <li><img src="img/work_blue.png" alt="青色"></li>
+                                <li><img src="img/work_red.png" alt="赤色"></li>
+                                <li><img src="img/work_blue.png" alt="青色"></li>
+                                <li><img src="img/work_red.png" alt="赤色"></li>
+                                <li><img src="img/work_yellow.png" alt="黄色"></li>
+                            </ul>
+                            <p>Caming soon...</p>
+                        </div>
+
                     </div>
                 </section>
                 <section class="contact top-content">
-                   <div class="inner">
+                    <div class="inner">
                     <div class="section-title">Contact</div>
                     <form action="#" method="post" id="form">
                         <p>現在送信できません。</p>
                         <p>
-                            <label>
+                            <label for="text">
                     お名前<br>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" class="text" required>
                     </label>
                         </p>
                         <p>
-                            <label>
+                            <label for="text">
                     メールアドレス<br>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" class="text" required>
                 </label>
                         </p>
                         <p>
-                            <label>
+                            <label for="text textarea">
                         内容<br>
-                        <textarea name="textarea" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="textarea" id="message" cols="30" rows="10" class="textarea"></textarea>
                     </label>
                         </p>
-                        <input type="reset" value="クリア">
-                        <input type="submit" value="送信">
+                        <input type="reset" value="クリア" class="c-btn">
+                        <input type="submit" value="送信" class="c-btn">
                     </form>
+                    </div>
                 </section>
-            </div>
-            </div>
+            
         </main>
-    </div>
-    <div class="page-top">
-        <a href="#"><img src="img/pagetop.png" alt="TOPへ戻る"></a>
-    </div>
-    <footer class="footer">
-       <div class="inner">
-       <div class="footer-sns">
-        <a href="https://github.com/buchimichi/public/tree/master/public">
-            <img src="img/github_icon.png" alt="github"> コード関係はこちら
-        </a>
+
+        <div class="page-top">
+            <a href="#"><img src="img/pagetop.png" alt="TOPへ戻る"></a>
         </div>
-        <p class="footer-copy"><small>2017 (c)@M.iwabuchi</small></p>
-        </div>
-    </footer>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js"></script>
+        <footer class="footer">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <div class="footer-sns">
+                            <a href="https://github.com/buchimichi/public/tree/master/public">
+                                <img src="img/github_icon.png" alt="github"> コード関係はこちら
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="footer-copy"><small>2017 (c)@M.iwabuchi</small></p>
+                    </li>
+
+                </ul>
+            </div>
+        </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
-  </html>
+
+</html>

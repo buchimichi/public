@@ -11,3 +11,17 @@
         
     }
 }
+
+.c-btn{
+    width: calc(145/320*100%);
+    padding: 0 32px;
+    margin-right: 20px;
+    margin-bottom: 24px;
+    
+    background-color: #b5b5b5;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+

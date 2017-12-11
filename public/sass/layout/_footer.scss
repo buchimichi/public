@@ -1,19 +1,47 @@
-.footer{
+    .footer {
     background-image: url(../../img/footer_bg.png);
-    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 0 24px 28px 24px;
-    &-sns{
+        li{
+            list-style-type: none;
+        }
+    &-sns {
         margin-bottom: 40px;
-        a{
+        a {
             text-decoration: none;
         }
     }
-    &-copy{
-        small{
-        @include rem(11);
+    &-copy {
+        small {
+            @include rem(11);
             font-family: $font-en;
         }
     }
 }
+    @media screen and(min-width:$sp) {
+        .footer {
+           background-size: cover;
+           overflow: hidden;
+            ul{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                justify-content: center;
+            }
+            li{
+                list-style-type: none;
+                padding-top: 72px;
+                margin-right: 40px;
+                @include rem(16);
+                &:last-child{
+                    margin-top: 47px;
+                    @include rem(12);
+                }
+            }
+           
+        }
+        
+    }

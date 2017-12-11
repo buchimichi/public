@@ -6,22 +6,27 @@
 .gnav{
         display: block;
     background-color: transparent;
-    margin-bottom: 46px;
+    
+    position: relative;
+    left: 110px;
     ul{
         display: flex;
     }
     li{
         list-style-type: none;
-        flex:0 0 15%;
+        flex:0 0 20%;
+        
     }
     a{
         display: block;
         text-align: center;
         line-height: 57px;
-        @include rem(18);
+        @include rem(24);
         font-family: $font-en;
         text-decoration: none;
         background-color: transparent;
+        position: absolute;
+        bottom: 100px;
         &:hover {
             opacity: 0.5;
             color: #959088;
