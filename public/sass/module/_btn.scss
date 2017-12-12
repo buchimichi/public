@@ -1,4 +1,4 @@
-.btn{
+.btn {
     display: inline-block;
     background-color: #fff;
     text-decoration: none;
@@ -6,22 +6,48 @@
     padding: 15px;
     margin-right: 24px;
     border-radius: 30px;
-    &-about{
+    &-about {
         width: calc(72/320*100%);
-        
     }
 }
 
-.c-btn{
-    width: calc(145/320*100%);
-    padding: 0 32px;
+.nav-btn {
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.active{
+    background-image: url("../../img/sp_gnavxbtn.png");
+}
+.c-btn {
+    width: 115px;
+    background-color: #b5b5b5;
     margin-right: 20px;
     margin-bottom: 24px;
-    
-    background-color: #b5b5b5;
-    &:last-child{
+    &:last-child {
         margin-right: 0;
     }
 }
 
-
+@media screen and(min-width:$sp) {
+    .btn-about {
+        padding: 22px;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .c-btn {
+        width: 150px;
+        margin-right: 20px;
+        margin-bottom: 24px;
+        background-color: #b5b5b5;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

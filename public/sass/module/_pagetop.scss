@@ -5,3 +5,13 @@
     width: 45px;
     height: 45px;
 }
+
+@media screen and(min-width:$sp){
+    .page-top{
+    position: fixed;
+    right: 48px;
+    bottom: 45px;
+    width: 107px;
+    height: 100px;
+    }
+}

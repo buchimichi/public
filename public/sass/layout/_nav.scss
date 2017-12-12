@@ -1,37 +1,53 @@
-.gnav{
-    display: none;
-}
-
-@media screen and(min-width:$sp){
-.gnav{
-        display: block;
-    background-color: transparent;
-    
-    position: relative;
-    left: 110px;
-    ul{
-        display: flex;
-    }
-    li{
-        list-style-type: none;
-        flex:0 0 20%;
-        
-    }
-    a{
-        display: block;
-        text-align: center;
-        line-height: 57px;
-        @include rem(24);
-        font-family: $font-en;
-        text-decoration: none;
+.gnav {
+        display: none;
         background-color: transparent;
+        padding-left: 20px;
         position: absolute;
-        bottom: 100px;
-        &:hover {
-            opacity: 0.5;
-            color: #959088;
+            top: 260px;
+        ul {
+            display: flex;
         }
-    }
+        li {
+            list-style-type: none;
+            flex: 0 0 30%;
+        }
+        a {
+            display: block;
+            @include rem(11);
+            font-family: $font-en;
+            text-decoration: none;
+            background-color: transparent;
+            
+            &:hover {
+                opacity: 0.5;
+                color: #959088;
+            }
+        }
     
+}
+@media screen and(min-width:$sp) {
+    .gnav {
+        display: block;
+        background-color: transparent;
+        position: relative;
+        left: 110px;
+        ul {
+            display: flex;
+        }
+        li {
+            list-style-type: none;
+            flex: 0 0 20%;
+        }
+        a {
+            display: block;
+            text-align: center;
+            line-height: 57px;
+            @include rem(24);
+            font-family: $font-en;
+            text-decoration: none;
+            background-color: transparent;
+            position: fixed;
+            top: 650px;
+        }
     }
 }
