@@ -11,19 +11,100 @@
     }
 }
 
-.nav-btn {
-    display: block;
+//.nav-btn {
+//    position: absolute;
+//    top: 200px;
+//    right: 0;
+//    width: 44px;
+//    height: 38px;
+//    background-color: transparent;
+//    border: none;
+//    cursor: pointer;
+//     background-image:url("../img/sp_gnav.png");
+//}
+//
+//.active{
+//    background-image: url("../img/sp_gnavxbtn.png");
+//}
+.menu {
+    width: 28px;
+    height: 23px;
+
     position: absolute;
-    top: 200px;
-    right: 0;
-    background-color: transparent;
-    border: none;
+    left:89%;
+    top: 210px;
     cursor: pointer;
+//    
+}
+.menu-border{
+    width: 38px;
+    height: 40px;
+    margin-top: -9px;
+    margin-left: -3px;
+    
+    border: 1px solid #fff;
+}
+.menu1 {
+    width: 28px;
+    height: 2px;
+    
+    background-color: #fff;
+    top: 0px;
+    position: absolute;
 }
 
-.active{
-    background-image: url("../../img/sp_gnavxbtn.png");
+.menu2 {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    top: 10px;
+    position: absolute;
 }
+
+.menu3 {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    top: 20px;
+    position: absolute;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    /* Opera */
+    -moz-transition: all 0.5s ease-out;
+    /* Firefox */
+    -webkit-transition: all 0.5s ease-out;
+    /* GoogleChrome, Safari */
+    -ms-transition: all 0.5s ease-out;
+    /* IE */
+}
+
+.menuclick1 {
+    top: 10px;
+    -o-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -webkit-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    transform: rotate(405deg);
+}
+
+.menuclick2 {
+    opacity: 0;
+}
+
+.menuclick3 {
+    top: 10px;
+    -o-transform: rotate(-405deg);
+    -moz-transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+    -ms-transform: rotate(-405deg);
+    transform: rotate(-405deg);
+}
+
 .c-btn {
     width: 115px;
     background-color: #b5b5b5;
@@ -34,6 +115,14 @@
     }
 }
 
+@media screen and(min-width:448px){
+    .menu{
+        position: absolute;
+        left: 92.5%;
+        top: 190px;
+        
+    }
+}
 @media screen and(min-width:$sp) {
     .btn-about {
         padding: 22px;
@@ -41,6 +130,10 @@
     .nav-btn {
         display: none;
     }
+    .menu{
+        display: none;
+    }
+    
     .c-btn {
         width: 150px;
         margin-right: 20px;

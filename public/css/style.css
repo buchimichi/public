@@ -147,7 +147,7 @@ a {
         bottom: 180px; } }
 
 .footer {
-  background-image: url(../../img/footer_bg.png);
+  background-image: url(../img/footer_bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   padding: 0 24px 28px 24px; }
@@ -188,48 +188,62 @@ a {
         font-size: 12px;
         font-size: 1.2rem; } }
 
-.gnav {
+.gnav-sp {
   display: none;
   background-color: transparent;
   padding-left: 20px;
   position: absolute;
   top: 260px; }
-  .gnav ul {
+  .gnav-sp ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .gnav li {
+  .gnav-sp li {
     list-style-type: none;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%; }
-  .gnav a {
+  .gnav-sp a {
     display: block;
     font-size: 11px;
     font-size: 1.1rem;
     font-family: "Press Start 2P", cursive, serif;
     text-decoration: none;
     background-color: transparent; }
-    .gnav a:hover {
+    .gnav-sp a:hover {
       opacity: 0.5;
       color: #959088; }
 
+.gnav-pc {
+  display: none; }
+
+@media screen and (min-width: 448px) {
+  .gnav-sp {
+    position: absolute;
+    top: 240px; } }
+
 @media screen and (min-width: 768px) {
-  .gnav {
+  .gnav-sp {
+    display: none; }
+  .gnav-pc {
     display: block;
+    width: 100%;
+    height: 60px;
     background-color: transparent;
-    position: relative;
-    left: 110px; }
-    .gnav ul {
+    position: absolute;
+    left: 300px;
+    bottom: 50px;
+    z-index: 100; }
+    .gnav-pc ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    .gnav li {
+    .gnav-pc li {
       list-style-type: none;
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-      flex: 0 0 20%; }
-    .gnav a {
+      -ms-flex: 0 0 15%;
+      flex: 0 0 15%; }
+    .gnav-pc a {
       display: block;
       text-align: center;
       line-height: 57px;
@@ -237,9 +251,10 @@ a {
       font-size: 2.4rem;
       font-family: "Press Start 2P", cursive, serif;
       text-decoration: none;
-      background-color: transparent;
-      position: fixed;
-      top: 650px; } }
+      background-color: transparent; }
+  .gnav-pc.sticky {
+    position: fixed;
+    top: 0; } }
 
 .inner {
   display: block;
@@ -265,17 +280,73 @@ a {
   .btn-about {
     width: calc(72/320*100%); }
 
-.nav-btn {
-  display: block;
+.menu {
+  width: 28px;
+  height: 23px;
   position: absolute;
-  top: 200px;
-  right: 0;
-  background-color: transparent;
-  border: none;
+  left: 89%;
+  top: 210px;
   cursor: pointer; }
 
-.active {
-  background-image: url("../../img/sp_gnavxbtn.png"); }
+.menu-border {
+  width: 38px;
+  height: 40px;
+  margin-top: -9px;
+  margin-left: -3px;
+  border: 1px solid #fff; }
+
+.menu1 {
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+  top: 0px;
+  position: absolute; }
+
+.menu2 {
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+  top: 10px;
+  position: absolute; }
+
+.menu3 {
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+  top: 20px;
+  position: absolute; }
+
+.menu1,
+.menu2,
+.menu3 {
+  transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  /* Opera */
+  -moz-transition: all 0.5s ease-out;
+  /* Firefox */
+  -webkit-transition: all 0.5s ease-out;
+  /* GoogleChrome, Safari */
+  -ms-transition: all 0.5s ease-out;
+  /* IE */ }
+
+.menuclick1 {
+  top: 10px;
+  -o-transform: rotate(405deg);
+  -moz-transform: rotate(405deg);
+  -webkit-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
+  transform: rotate(405deg); }
+
+.menuclick2 {
+  opacity: 0; }
+
+.menuclick3 {
+  top: 10px;
+  -o-transform: rotate(-405deg);
+  -moz-transform: rotate(-405deg);
+  -webkit-transform: rotate(-405deg);
+  -ms-transform: rotate(-405deg);
+  transform: rotate(-405deg); }
 
 .c-btn {
   width: 115px;
@@ -285,10 +356,18 @@ a {
   .c-btn:last-child {
     margin-right: 0; }
 
+@media screen and (min-width: 448px) {
+  .menu {
+    position: absolute;
+    left: 92.5%;
+    top: 190px; } }
+
 @media screen and (min-width: 768px) {
   .btn-about {
     padding: 22px; }
   .nav-btn {
+    display: none; }
+  .menu {
     display: none; }
   .c-btn {
     width: 150px;
@@ -321,7 +400,8 @@ a {
   right: 10px;
   bottom: 40px;
   width: 45px;
-  height: 45px; }
+  height: 45px;
+  display: none; }
 
 @media screen and (min-width: 768px) {
   .page-top {
@@ -369,7 +449,10 @@ a {
     height: 180px;
     border-radius: 10px;
     margin-bottom: 24px;
-    background: url(../img/kaomae_pc.png) no-repeat 0 0 #a84200; }
+    background-color: #a84200; }
+    .about-right .about-img img {
+      width: 135px;
+      height: 156px; }
     .about-right .about-img .about-bg {
       display: block;
       margin: 0 auto;
@@ -390,7 +473,7 @@ a {
     list-style-type: none; }
 
 @media screen and (min-width: 768px) {
-  .about {
+  #about {
     overflow: hidden; }
   .about-left {
     float: left;
@@ -423,6 +506,9 @@ a {
       height: 327px;
       margin-bottom: 45px;
       background-position: center center; }
+      .about-right .about-img img {
+        width: 300px;
+        height: 320px; }
       .about-right .about-img-bg {
         display: block;
         margin: 0 auto;
@@ -444,8 +530,7 @@ a {
   margin-bottom: 40px; }
 
 .skill-right .skill-img {
-  width: 320px;
-  padding-right: 45px; }
+  width: 320px; }
   .skill-right .skill-img img {
     padding-left: 25px;
     margin-bottom: 33px; }
@@ -457,7 +542,7 @@ a {
       margin-right: 0; }
 
 @media screen and (min-width: 768px) {
-  .skill {
+  #skill {
     width: calc(940/940*100%);
     padding-top: 50px;
     overflow: hidden; }
@@ -493,7 +578,7 @@ a {
         .skill-right .skill-img img:last-child {
           margin-right: 0; } }
 
-.work {
+#work {
   background-color: #1d2088; }
 
 .work-list {
@@ -539,7 +624,7 @@ a {
   padding-bottom: 40px; }
 
 @media screen and (min-width: 768px) {
-  .work {
+  #work {
     padding-top: 50px; }
   .work-list {
     padding-left: 40px; }
@@ -594,8 +679,8 @@ a {
       text-align: right;
       padding-bottom: 80px; } }
 
-.contact {
-  background-image: url(../../img/footer_bg.png);
+#contact {
+  background-image: url(../img/footer_bg.png);
   background-position: center center; }
 
 #form p {
@@ -616,7 +701,7 @@ a {
     margin-top: 16px; }
 
 @media screen and (min-width: 768px) {
-  .contact {
+  #contact {
     padding-top: 50px; }
   #form {
     width: 470px;

@@ -20,11 +20,16 @@
                 </h1>
             </div>
         </header>
-        
-           <button class="nav-btn"><img src="img/sp_gnav.png" alt="ナビ"></button>
-           
-           <nav class="gnav">
-           
+
+        <!--           <button class="nav-btn"></button>-->
+        <div class="menu">
+           <div class="menu-border">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+            </div>
+        </div>
+        <nav class="gnav-sp">
             <ul class="inner">
                 <li><a href="#">about</a></li>
                 <li><a href="#">skill</a></li>
@@ -33,43 +38,52 @@
             </ul>
         </nav>
 
+       <nav class="gnav-pc">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
         <main class="main">
             <div class="block"></div>
-            
 
-                <section class="about top-content">
-                   <div class="inner">
-                <div class="section-title">About</div>
+
+            <section id="about" class="top-content">
+                <div class="inner">
+                    <div class="section-title">About</div>
                     <div class="about-left">
                         <p>名前　　岩渕　正道</p>
                         <p>1985年生まれ。千歳市出身。</p>
-                        
+
                         <p>経歴</p>
-                        <p>20代は工場内作業に明け暮れていましたが、 次第にIT関係の仕事に興味を持つようになり、アラサーを好機に転職を計ることを決めました。 
-                        2017年7月よりPC・スマホクリエイト科に入校。
+                        <p>20代は工場内作業に明け暮れていましたが、 次第にIT関係の仕事に興味を持つようになり、アラサーを好機に転職を計ることを決めました。 2017年7月よりPC・スマホクリエイト科に入校。
                         </p>
                     </div>
                     <div class="about-right">
-                      <div class="about-img">
-                       <div class="about-bg">
-                        </div>
+                        
+                           <div class="about-img">
+                           <figure><img src="img/kaomae_pc.png" alt="kao"></figure>
+                            <div class="about-bg">
+                            </div>
                         </div>
                         <ul>
                             <li>
-                                <a href="#" class="btn btn-about"></a>
+                                <a href="img/kaomae_pc.png" class="btn btn-about"></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-about"></a>
+                                <a href="img/kaoleft_pc.png" class="btn btn-about"></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-about"></a>
+                                <a href="img/kaoright_pc.png" class="btn btn-about"></a>
                             </li>
                         </ul>
                     </div>
-                    </div>
-                </section>
-                <section class="skill top-content">
-                   <div class="inner">
+                </div>
+            </section>
+            <section id="skill" class="top-content">
+                <div class="inner">
                     <div class="section-title">Skill</div>
                     <div class="skill-left">
                         <p>資格・免許<br>普通自動車免許</p>
@@ -85,38 +99,38 @@
                         </div>
                     </div>
 
-                
-                    </div>
-                </section>
-                <div class="block"></div>
-                <section class="work top-content">
 
-                    <div class="inner">
-                        <div class="section-title">Work</div>
-                        <div class="work-list">
-                            <ul>
-                                <li><a href="#" class="all">All</a></li>
-                                <li><a href="#">sample1</a></li>
-                                <li><a href="#">sample2</a></li>
-                                <li><a href="#">sample3</a></li>
-                            </ul>
-                        </div>
-                        <div class="work-listimg">
-                            <ul>
-                                <li><img src="img/work_yellow.png" alt="黄色"></li>
-                                <li><img src="img/work_blue.png" alt="青色"></li>
-                                <li><img src="img/work_red.png" alt="赤色"></li>
-                                <li><img src="img/work_blue.png" alt="青色"></li>
-                                <li><img src="img/work_red.png" alt="赤色"></li>
-                                <li><img src="img/work_yellow.png" alt="黄色"></li>
-                            </ul>
-                            <p>Caming soon...</p>
-                        </div>
+                </div>
+            </section>
+            <div class="block"></div>
+            <section id="work" class="top-content">
 
+                <div class="inner">
+                    <div class="section-title">Work</div>
+                    <div class="work-list">
+                        <ul>
+                            <li><a href="#" class="all">All</a></li>
+                            <li><a href="#">sample1</a></li>
+                            <li><a href="#">sample2</a></li>
+                            <li><a href="#">sample3</a></li>
+                        </ul>
                     </div>
-                </section>
-                <section class="contact top-content">
-                    <div class="inner">
+                    <div class="work-listimg">
+                        <ul>
+                            <li><img src="img/work_yellow.png" alt="黄色"></li>
+                            <li><img src="img/work_blue.png" alt="青色"></li>
+                            <li><img src="img/work_red.png" alt="赤色"></li>
+                            <li><img src="img/work_blue.png" alt="青色"></li>
+                            <li><img src="img/work_red.png" alt="赤色"></li>
+                            <li><img src="img/work_yellow.png" alt="黄色"></li>
+                        </ul>
+                        <p>Caming soon...</p>
+                    </div>
+
+                </div>
+            </section>
+            <section id="contact" class="top-content">
+                <div class="inner">
                     <div class="section-title">Contact</div>
                     <form action="#" method="post" id="form">
                         <p>現在送信できません。</p>
@@ -141,9 +155,9 @@
                         <input type="reset" value="クリア" class="c-btn">
                         <input type="submit" value="送信" class="c-btn">
                     </form>
-                    </div>
-                </section>
-            
+                </div>
+            </section>
+
         </main>
 
         <div class="page-top">
