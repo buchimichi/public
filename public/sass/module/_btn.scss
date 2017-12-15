@@ -29,10 +29,11 @@
 .menu {
     width: 28px;
     height: 23px;
-
+    background-color: transparent;
     position: absolute;
     left:89%;
     top: 210px;
+    border: none;
     cursor: pointer;
 //    
 }
@@ -105,6 +106,25 @@
     transform: rotate(-405deg);
 }
 
+.work-list button{
+        display: block;
+        text-decoration: none;
+        @include rem(14);
+        line-height: $lh-txt;
+        font-family: $font-en;
+        background-color: transparent;
+        color: #fff;
+        padding: 0 17px;
+        margin-right: 17px;
+        margin-bottom: 24px;
+        border: 2px solid #fff;
+    &:hover{
+        opacity: 0.5;
+        color: #959088;
+    }
+}
+
+
 .c-btn {
     width: 115px;
     background-color: #b5b5b5;
@@ -134,6 +154,9 @@
         display: none;
     }
     
+    .work-list button{ 
+        margin-bottom: 64px;
+}
     .c-btn {
         width: 150px;
         margin-right: 20px;

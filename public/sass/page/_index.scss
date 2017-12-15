@@ -74,7 +74,6 @@
     .about-left {
         float: left;
         width: calc(465/940*100%);
-        margin-right: 35px;
         padding-left: 0;
         p {
             @include rem(24);
@@ -86,7 +85,7 @@
                 margin-bottom: 40px;
             }
             &:nth-last-child(2) {
-                width: 50px;
+                
                 height: 0;
                 float: left;
             }
@@ -216,7 +215,7 @@
 }
 
 .work-list {
-    padding-left: 40px;
+    margin-left: 14px;
     ul {
         display: -webkit-flex;
         display: -moz-flex;
@@ -228,23 +227,15 @@
     li {
         list-style-type: none;
     }
-    a {
-        display: block;
-        text-decoration: none;
-        @include rem(14);
-        line-height: $lh-txt;
-        font-family: $font-en;
-        padding: 0 5px;
-        margin-right: 17px;
-        margin-bottom: 24px;
-        border: 2px solid #fff;
-    }
     .all {
-        padding: 0 33px;
+        padding: 0 45px;
     }
+    
 }
 
 .work-listimg {
+    padding-top: 16px;
+    display: block;
     li {
         list-style-type: none;
         text-align: center;
@@ -279,23 +270,13 @@
     li {
         list-style-type: none;
     }
-    a {
-        display: block;
-        text-decoration: none;
-        @include rem(14);
-        line-height: $lh-txt;
-        font-family: $font-en;
-        padding: 0 17px;
-        margin-right: 17px;
-        margin-bottom: 64px;
-        border: 2px solid #fff;
-    }
     .all {
         padding: 0 45px;
     }
 }
 
 .work-listimg {
+    padding-top: 0;
     padding-left: 130px;
     ul{
         display: -webkit-flex;

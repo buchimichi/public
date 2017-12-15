@@ -1,30 +1,49 @@
 $(function () {
-
+    
+    $(".header").vegas({
+        overlay: true,
+        transition: 'flash',
+        transitionDuration: 2000,
+        align: 'bottom',
+        delay: 10000,
+        animation: 'random',
+        animationDuration: 30000,
+        slides: [
+            {
+                src: '../img/header_bg01.png'
+            },
+            {
+                src: '../img/header_bg02.png'
+            },
+            {
+                src: '../img/header_bg03.png'
+            },
+            {
+                src: '../img/header_bg04.png'
+            }
+  ]
+    });
 
     //    ---------------gnavトグル--------------------
     $(".menu").click(function () {
         $(".menu1").toggleClass("menuclick1");
-        $(".gnav-sp").stop().fadeToggle(500);
+        $(".gnav-sp a").stop().fadeToggle(500);
     });
     $(".menu").click(function () {
         $(".menu2").toggleClass("menuclick2");
-        $(".gnav-sp").stop().fadeToggle(500);
+        //        $(".gnav-sp").stop().fadeToggle(500);
     })
     $(".menu").click(function () {
         $(".menu3").toggleClass("menuclick3");
-        $(".gnav-sp").stop().fadeToggle(500);
+        //        $(".gnav-sp").stop().fadeToggle(500);
     });
 
 
     //------------------aboutビューアー-------------------   
-    $(".about a").click(function () {
+    $(".about-right a").click(function () {
         $("figure img").attr("src", $(this).attr("href"));
         return false;
     })
-
-
-
-
     //    --------------------pagetop--------------
     $(".page-top").click(function () {
         $("html,body").animate({
@@ -41,22 +60,59 @@ $(function () {
             $(".page-top").fadeOut();
         }
 
-//    -----------------nav-sticky-------------
-        if ($gnavPos <= $(window).scrollTop()) {
+        //    -----------------nav-sticky-------------
+        if (600 <= $(window).scrollTop()) {
             $(".gnav-pc").addClass("sticky");
         } else {
             $(".gnav-pc").removeClass("sticky");
         }
     })
-//    -------------------スムーススクロール------
-    $(".gnav-pc a").click(function(){
+    //    -------------------スムーススクロール------
+    $(".gnav-sp a").click(function () {
         var $this = $(this).attr("href");
-        
+
         var target = $($this).offset().top;
         $("html,body").animate({
             scrollTop: target - 10
         }, 1000);
         return false;
     })
-    
+
+    $(".gnav-pc a").click(function () {
+        var $this = $(this).attr("href");
+
+        var target = $($this).offset().top;
+        $("html,body").animate({
+            scrollTop: target - 10
+        }, 1000);
+        return false;
+    })
+    //    ------------------フィルタリング------------
+    $("button").click(function () {
+        var target = $(this).attr("value");
+
+        $(".work-listimg li").each(function () {
+
+            $(this).animate({
+                "opacity": 0
+            }, 300, function () {
+                $(this).hide();
+
+
+                if ($(this).hasClass(target) || target == "all") {
+
+                    $(this).show();
+                    $(this).animate({
+                        "opacity": 1
+                    }, 300);
+                }
+            });
+        });
+    });
+    //    $(".work-listimg").masonry({
+    //                itemSelector:".item",
+    //                    columnWidth:".item",
+    //                    persentPotion: true
+    //                });
+
 });
