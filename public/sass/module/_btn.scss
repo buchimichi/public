@@ -32,7 +32,7 @@
     background-color: transparent;
     position: absolute;
     left:89%;
-    top: 255px;
+    top: 248px;
     border: none;
     cursor: pointer;
 //    
@@ -106,6 +106,19 @@
     transform: rotate(-405deg);
 }
 
+@media screen and(min-width:375px){
+    .menu{
+        position: absolute;
+        top: 290px;
+        left: 340px;
+    }
+}
+
+@media screen and(min-width:376px){
+    .menu{
+       display: none;
+    }
+}
 .work-list button{
         display: block;
         text-decoration: none;

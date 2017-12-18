@@ -252,6 +252,11 @@
     }
 }
 
+@media screen and(min-width:375px){
+    .work-list{
+        width: 100%;
+    }
+}
 @media screen and(min-width:$sp){
     #work {
     padding-top: 50px;

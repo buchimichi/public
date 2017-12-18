@@ -102,11 +102,13 @@ a:hover { opacity: .5; }
 
 .block { background-image: url(../img/pc_block.png); background-size: cover; height: 41px; }
 
+@media screen and (min-width: 375px) { .top-content { padding: 0 30px; } }
+
 .btn { display: inline-block; background-color: #fff; text-decoration: none; border: none; padding: 15px; margin-right: 24px; border-radius: 30px; }
 
 .btn-about { width: calc(72/320*100%); }
 
-.menu { width: 28px; height: 23px; background-color: transparent; position: absolute; left: 89%; top: 255px; border: none; cursor: pointer; }
+.menu { width: 28px; height: 23px; background-color: transparent; position: absolute; left: 89%; top: 248px; border: none; cursor: pointer; }
 
 .menu-border { width: 38px; height: 40px; margin-top: -9px; margin-left: -3px; border: 1px solid #fff; }
 
@@ -123,6 +125,10 @@ a:hover { opacity: .5; }
 .menuclick2 { opacity: 0; }
 
 .menuclick3 { top: 10px; -o-transform: rotate(-405deg); -moz-transform: rotate(-405deg); -webkit-transform: rotate(-405deg); -ms-transform: rotate(-405deg); transform: rotate(-405deg); }
+
+@media screen and (min-width: 375px) { .menu { position: absolute; top: 290px; left: 340px; } }
+
+@media screen and (min-width: 376px) { .menu { display: none; } }
 
 .work-list button { display: block; text-decoration: none; font-size: 14px; font-size: 1.4rem; line-height: 1.5; font-family: "Press Start 2P", cursive, serif; background-color: transparent; color: #fff; padding: 0 17px; margin-right: 17px; margin-bottom: 24px; border: 2px solid #fff; }
 
@@ -432,6 +438,8 @@ body.vegas-container > .vegas-overlay, body.vegas-container > .vegas-slide, body
 .work-listimg li:last-child { margin-bottom: 24px; }
 
 .work-listimg p { font-size: 14px; font-size: 1.4rem; font-family: "Press Start 2P", cursive, serif; text-align: right; padding-bottom: 40px; }
+
+@media screen and (min-width: 375px) { .work-list { width: 100%; } }
 
 @media screen and (min-width: 768px) { #work { padding-top: 50px; }
   .work-list { padding-left: 40px; }

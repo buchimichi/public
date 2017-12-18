@@ -13,3 +13,9 @@
     background-size: cover;
     height: 41px;
 }
+
+@media screen and(min-width:375px){
+    .top-content{
+        padding: 0 30px;
+    }
+}
