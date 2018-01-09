@@ -5,6 +5,7 @@ position: relative;
 
 .header {
 //    width: 100%;
+    height: 100%;
     overflow: hidden;
     background:url(../img/header_bg01.png) no-repeat 0.1px 0;
     background-size:cover;
@@ -13,7 +14,6 @@ position: relative;
     position: relative;
     &-logo {
         background: url(../img/header_kanban.png) no-repeat center center;
-        
         width: 90%;
         padding: 80px 0;
         margin: 0 auto;
@@ -29,7 +29,7 @@ position: relative;
     }
 }
 
-@media screen and (min-width:$sp) {
+@media screen and (min-width:$pc) {
     .header {
         height: 768px !important;
         padding-bottom: 50%;
@@ -37,20 +37,21 @@ position: relative;
         &-logo{
             background-image: url(../img/kanban_pc.png);
             max-width: 100%;
-            
+            height: 100%;
             @include rem(36);
-            padding-top: 400px;
+            padding-top: 20%;
+            padding-left: 20px;
             line-height: 2;
             position: absolute;
            top: 50%;
             left: 50%;
-            p{
-                position: relative;
-                left: 340px;
-                bottom: 180px;
-                text-align: center;
-                width: 700px;
-            }
+//            p{
+//                position: relative;
+//                left: 340px;
+//                bottom: 180px;
+//                text-align: center;
+//                width: 700px;
+//            }
            
         }
     }

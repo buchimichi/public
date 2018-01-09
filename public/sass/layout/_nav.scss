@@ -30,12 +30,7 @@
     display: none;
 }
 
-@media screen and(min-width:448px) {
-    .gnav-sp {
-        position: absolute;
-        top: 240px;
-    }
-}
+
 
 @media screen and(min-width:$sp) {
     .gnav-sp {
@@ -47,7 +42,7 @@
         height: 60px;
         background-color: transparent;
         position: absolute;
-        left: 330px;
+        left: 400px;
         bottom: 50px;
         z-index: 100;
         ul {
