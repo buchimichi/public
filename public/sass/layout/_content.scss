@@ -2,6 +2,7 @@
     display: block;
     max-width: $size-max;
     margin: 0 auto;
+    
 }
 
 .top-content{
@@ -17,5 +18,11 @@
 @media screen and(min-width:375px){
     .top-content{
         padding: 0 30px;
+    }
+}
+
+@media screen and(min-width:$sp){
+    .top-content{
+        padding:0;
     }
 }

@@ -42,10 +42,11 @@
         height: 180px;
         border-radius: 10px;
         margin-bottom: 24px;
-        background-color:#a84200;
+        background-color:#fff;
         img{
-            width:135px; 
-            height:156px;
+            width:180px; 
+            height:180px;
+            padding-left: 10px;
         }
         .about-bg {
             display: block;
@@ -108,7 +109,7 @@
             background-position: center center;
             img{
                 width: 300px;
-                height: 320px;
+                height: 330px;
             }
             &-bg {
                 display: block;
@@ -145,15 +146,16 @@
     }
     .skill-img {
         width: 320px;
-
+        
         img {
-            padding-left: 25px;
+            margin-right: 25px;
+
             margin-bottom: 33px;
             &:nth-child(3) {
                 margin-right: 0;
             }
             &:nth-child(4) {
-                padding-left: 45px;
+                padding-left: 30px;
             }
             &:last-child {
                 margin-right: 0;
@@ -181,8 +183,7 @@
     .skill-right {
         
         float: right;
-        padding-right: 20px;
-        padding-top: 16px;
+
         p {
             @include rem(24);
             text-align: center;
@@ -215,7 +216,7 @@
 }
 
 .work-list {
-    margin-left: 14px;
+    margin-left: 40px;
     ul {
         display: -webkit-flex;
         display: -moz-flex;
@@ -228,13 +229,16 @@
         list-style-type: none;
     }
     .all {
-        padding: 0 45px;
+        padding: 0 31px;
     }
-    
+    .corpo{
+            padding: 0 24px;
+    }
 }
 
 .work-listimg {
     padding-top: 16px;
+    padding-bottom: 40px;
     display: block;
     li {
         list-style-type: none;
@@ -252,17 +256,18 @@
     }
 }
 
-@media screen and(min-width:375px){
-    .work-list{
-        width: 100%;
-    }
-}
+//@media screen and(min-width:375px){
+//    .work-list{
+//        width: 100%;
+//    }
+//}
 @media screen and(min-width:$sp){
     #work {
     padding-top: 50px;
 }
 
 .work-list {
+    margin-left: 0;
     padding-left: 40px;
     ul {
         display: -webkit-flex;
@@ -281,8 +286,7 @@
 }
 
 .work-listimg {
-    padding-top: 0;
-    padding-left: 130px;
+    padding: 0 0 80px 130px;
     ul{
         display: -webkit-flex;
         display: -moz-flex;
@@ -300,13 +304,7 @@
             margin-bottom: 24px;
         }
     }
-    p {
-        @include rem(24);
-        font-family: $font-en;
-        text-align: right;
-        padding-bottom: 80px;
     }
-}
 }
 
 //-----------------contact-------------
