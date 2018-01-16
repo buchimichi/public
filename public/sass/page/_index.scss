@@ -108,8 +108,13 @@
             margin-bottom: 45px;
             background-position: center center;
             img{
+<<<<<<< HEAD
                 width: 250px;
                 height: 280px;
+=======
+                width: 300px;
+                height: 330px;
+>>>>>>> a54301fb3a576cbfbca1e4a3c6d268a94380acaf
             }
             &-bg {
                 display: block;
@@ -286,6 +291,7 @@
     display: none;
 }
 
+<<<<<<< HEAD
 .caption p{
 //    line-height: 220px;
     padding-top: 70px;
@@ -315,6 +321,8 @@
     height: 420px;
     z-index: 110;
 }
+=======
+>>>>>>> a54301fb3a576cbfbca1e4a3c6d268a94380acaf
 //@media screen and(min-width:375px){
 //    .work-list{
 //        width: 100%;
@@ -345,7 +353,11 @@
 }
 
 .work-listimg {
+<<<<<<< HEAD
     padding: 0 0 80px 170px;
+=======
+    padding: 0 0 80px 130px;
+>>>>>>> a54301fb3a576cbfbca1e4a3c6d268a94380acaf
     ul{
         display: -webkit-flex;
         display: -moz-flex;

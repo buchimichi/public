@@ -30,14 +30,27 @@
     display: none;
 }
 
+<<<<<<< HEAD
 @media screen and(min-width:$pc){
+=======
+
+
+@media screen and(min-width:$pc){
+    .gnav-sp {
+        display: none;
+    }
+>>>>>>> a54301fb3a576cbfbca1e4a3c6d268a94380acaf
     .gnav-pc {
         display: block;
         width: 70%;
         height: 60px;
         background-color: transparent;
         position: absolute;
+<<<<<<< HEAD
         left: 70px;
+=======
+        left: 400px;
+>>>>>>> a54301fb3a576cbfbca1e4a3c6d268a94380acaf
         bottom: 50px;
         z-index: 100;
         ul {
@@ -61,6 +74,7 @@
         position: fixed;
         top: 0;
     }
+<<<<<<< HEAD
 }
 
 
@@ -84,4 +98,6 @@
                 flex:0 0 20%;
         }
     }
+=======
+>>>>>>> a54301fb3a576cbfbca1e4a3c6d268a94380acaf
 }
