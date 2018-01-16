@@ -30,24 +30,14 @@
     display: none;
 }
 
-@media screen and(min-width:448px) {
-    .gnav-sp {
-        position: absolute;
-        top: 240px;
-    }
-}
-
-@media screen and(min-width:$sp) {
-    .gnav-sp {
-        display: none;
-    }
+@media screen and(min-width:$pc){
     .gnav-pc {
         display: block;
         width: 70%;
         height: 60px;
         background-color: transparent;
         position: absolute;
-        left: 330px;
+        left: 70px;
         bottom: 50px;
         z-index: 100;
         ul {
@@ -55,7 +45,7 @@
         }
         li {
             list-style-type: none;
-            flex: 0 0 20%;
+            flex: 0 0 30%;
         }
         a {
             display: block;
@@ -70,5 +60,28 @@
     .gnav-pc.sticky {
         position: fixed;
         top: 0;
+    }
+}
+
+
+@media screen and(min-width:1025px){
+  
+    .gnav-pc {
+        position: absolute;
+        left: 300px;
+        li{
+                flex:0 0 20%;
+        }
+    }
+}
+
+@media screen and(min-width:1896px){
+  
+    .gnav-pc {
+        position: absolute;
+        left: 400px;
+        li{
+                flex:0 0 20%;
+        }
     }
 }

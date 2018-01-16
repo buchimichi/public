@@ -110,16 +110,25 @@
 @media screen and(min-width:375px){
     .menu{
         position: absolute;
-        top: 290px;
+        top: 250px;
         left: 340px;
     }
 }
 
-@media screen and(min-width:376px){
+@media screen and(min-width:414px){
     .menu{
-       display: none;
+       position: absolute;
+        top: 250px;
+        left: 380px;
     }
 }
+
+@media screen and(min-width:426px){
+    .menu{
+        display: none;
+    }
+}
+
 .work-list button{
         display: block;
         text-decoration: none;
@@ -149,14 +158,7 @@
     }
 }
 
-@media screen and(min-width:448px){
-    .menu{
-        position: absolute;
-        left: 92.5%;
-        top: 190px;
-        
-    }
-}
+
 @media screen and(min-width:$sp) {
     .btn-about {
         padding: 22px;

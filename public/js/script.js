@@ -1,27 +1,10 @@
 $(function () {
     
-    $(".header").vegas({
-        overlay: true,
-        transition: 'flash',
-        transitionDuration: 2000,
-        align: 'bottom',
-        delay: 10000,
-        animation: 'random',
-        animationDuration: 30000,
-        slides: [
-            {
-                src: '../img/header_bg01.png'
-            },
-            {
-                src: '../img/header_bg02.png'
-            },
-            {
-                src: '../img/header_bg03.png'
-            },
-            {
-                src: '../img/header_bg04.png'
-            }
-  ]
+    $(".slide1").slick({
+        autoplay: true,
+        pauseOnHover: false,
+        arrows: false,
+        fade: true
     });
 
     //    ---------------gnavトグル--------------------
@@ -109,10 +92,26 @@ $(function () {
             });
         });
     });
-    //    $(".work-listimg").masonry({
-    //                itemSelector:".item",
-    //                    columnWidth:".item",
-    //                    persentPotion: true
-    //                });
+//    -----------------------------キャプションーーーーーーーーーーーーーーー
+    $("#work a").hover(function () {
+//        $(this).children("img").attr("alt");
+        $(this).append("<div class='caption'><p>" +
+            $(this).children("img").attr("alt") + "</p></div>");
 
+        $(this).children(".caption").stop().fadeIn(300);
+
+        $(this).children(".caption").children("p").animate({
+            "top": "0"
+        }, 300);
+    }, function () {
+        $(this).children(".caption").stop().fadeOut(300);
+
+        $(this).children(".caption").children("p").animate({
+            "top": "10px"
+        }, 300, function () {
+            $(this).parent(".caption").remove();
+        });
+
+        return false;
+    });
 });

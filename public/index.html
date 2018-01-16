@@ -4,26 +4,32 @@
 <head>
     <meta charset="utf-8">
     <title>Masamichi Iwabuchi Portfolio</title>
-    <meta name="description" content="ページの説明">
-    <meta name="viewport" content="width=devide-
-      width, initial-scale=1">
-    <meta name="robots" content="noindex">
-    <meta name="robots" content="nofollow">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="レトロゲームをモチーフとしたポートフォリオサイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <div class="wrapper">
-<div class="headwrap">
+        <div class="headwrap">
             <header class="header">
-                <div class="inner">
-                    <h1 class="header-logo">
-                        <p> Masamichi Iwabuchi Portforio Site</p>
-                    </h1>
-                </div>
-            </header>
+            <div class="slide1">
+                <div><img src="img/header_bgpc01.png" alt="メインビジュアル1" class="slide1-img"></div>
+                <div><img src="img/header_bgpc02.png" alt="メインビジュアル2"
+                          class="slide1-img"></div>
+                    <div><img src="img/header_bgpc03.png" alt="メインビジュアル3" class="slide1-img"></div>
+                    <div><img src="img/header_bgpc04.png" alt="メインビジュアル4" class="slide1-img"></div>
+            </div>
+               
+                <h1 class="header-logo">
+                    <span class="header-title"> Masamichi Iwabuchi <br>Portforio Site</span>
+                </h1>
             
+            </header>
+
             <!--           <button class="nav-btn"></button>-->
             <div class="menu">
                 <div class="menu-border">
@@ -40,7 +46,7 @@
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            
+
             <nav class="gnav-pc">
                 <ul>
                     <li><a href="#about">about</a></li>
@@ -56,7 +62,7 @@
 
             <section id="about" class="top-content">
                 <div class="inner">
-                    <div class="section-title">About</div>
+                    <h2 class="section-title">About</h2>
                     <div class="about-left">
                         <p>名前　　岩渕　正道</p>
                         <p>1985年生まれ。千歳市出身。</p>
@@ -68,19 +74,19 @@
                     <div class="about-right">
 
                         <div class="about-img">
-                            <figure><img src="img/kaomae_pc.png" alt="kao"></figure>
+                            <figure><img src="img/sarari_sho.png" alt="kao"></figure>
                             <div class="about-bg">
                             </div>
                         </div>
                         <ul>
                             <li>
-                                <a href="img/kaomae_pc.png" class="btn btn-about"></a>
+                                <a href="img/sarari_sho.png" class="btn btn-about"></a>
                             </li>
                             <li>
-                                <a href="img/kaoleft_pc.png" class="btn btn-about"></a>
+                                <a href="img/sarari_left.png" class="btn btn-about"></a>
                             </li>
                             <li>
-                                <a href="img/kaoright_pc.png" class="btn btn-about"></a>
+                                <a href="img/sarari_right.png" class="btn btn-about"></a>
                             </li>
                         </ul>
                     </div>
@@ -88,18 +94,21 @@
             </section>
             <section id="skill" class="top-content">
                 <div class="inner">
-                    <div class="section-title">Skill</div>
+                    <h2 class="section-title">Skill</h2>
                     <div class="skill-left">
-                        <p>資格・免許<br>普通自動車免許</p>
+                        <p>資格・免許<br>普通自動車免許<br>
+                        Webクリエイター認定試験<br>
+                        エキスパート
+                        </p>
                     </div>
                     <div class="skill-right">
                         <p>習得スキル</p>
                         <div class="skill-img">
-                            <img src="img/html.png" alt="html">
-                            <img src="img/js.png" alt="js">
-                            <img src="img/css.png" alt="css">
-                            <img src="img/ps.png" alt="ps">
-                            <img src="img/jq.png" alt="jq">
+                            <img src="img/html5.png" alt="html">
+                            <img src="img/jsicon.png" alt="js">
+                            <img src="img/css3.png" alt="css">
+                            <img src="img/photoicon.png" alt="ps">
+                            <img src="img/jquaryicon.png" alt="jq">
                         </div>
                     </div>
 
@@ -110,48 +119,68 @@
             <section id="work" class="top-content">
 
                 <div class="inner">
-                    <div class="section-title">Work</div>
+                    <h2 class="section-title">Work</h2>
                     <div class="work-list">
                         <ul>
                             <li><button value="all" class="all">All</button></li>
-                            <li><button value="yellow">sample1</button></li>
-                            <li><button value="red">sample2</button></li>
-                            <li><button value="blue">sample3</button></li>
+                            <li><button value="yellow" class="corpo">corpo</button></li>
+                            <li><button value="red">group</button></li>
+                            <li><button value="blue">banner</button></li>
                         </ul>
                     </div>
                     <div class="work-listimg">
                         <ul>
-                            <li class="item yellow"><img src="img/work_yellow.png" alt="黄色"></li>
-                            <li class="item blue"><img src="img/work_blue.png" alt="青色"></li>
-                            <li class="item red"><img src="img/work_red.png" alt="赤色"></li>
-                            <li class="item blue"><img src="img/work_blue.png" alt="青色"></li>
-                            <li class="item red"><img src="img/work_red.png" alt="赤色"></li>
-                            <li class="item yellow"><img src="img/work_yellow.png" alt="黄色"></li>
+                            <li class="item yellow"><a href="http://mitijet7.starfree.jp/bluepaon/"><img src="img/blluepaonh.jpg" alt="カフェブルーパンの<br>コーポレートサイト">
+                            <div class="caption">
+                            <p></p>
+                            </div></a>
+                            </li>
+                            <li class="item blue"><a href="img/banner01v.jpg"><img src="img/banner01.jpg" alt="このサイトのバナー">
+                            <div class="caption">
+                            <p></p>
+                        </div></a></li>
+                            <li class="item red"><a href="http://nextone304.webcrow.jp/2017_07/group/ookami/nextone/index.html"><img src="img/nextoneh.jpg" alt="グループ制作で私が作成した訓練校のサイト">
+                            <div class="caption">
+                            <p></p>
+                        </div></a></li>
+                            <li class="item blue"><a href="img/banner02v.jpg"><img src="img/banner02.jpg" alt="このサイトのバナー">
+                            <div class="caption">
+                            <p></p>
+                        </div></a>
+                            </li>
+                            <li class="item red"><a href="http://nextone304.webcrow.jp/2017_07/group/ookami/nextone/index.html"><img src="img/nextonef.jpg" alt="グループ制作で私が作成した訓練校のサイト">
+                            <div class="caption">
+                            <p></p>
+                        </div></a></li>
+                            <li class="item yellow"><a href="http://mitijet7.starfree.jp/bluepaon/"><img src="img/bluepaonf.jpg" alt="カフェブルーパンの<br>コーポレートサイト">
+                            <div class="caption">
+                            <p></p>
+                        </div></a>
+                            </li>
                         </ul>
-                        <p>Caming soon...</p>
                     </div>
 
                 </div>
             </section>
             <section id="contact" class="top-content">
                 <div class="inner">
-                    <div class="section-title">Contact</div>
+                    <h2 class="section-title">Contact</h2>
                     <form action="#" method="post" id="form">
                         <p>現在送信できません。</p>
                         <p>
                             <label for="text">
                     お名前<br>
-                    <input type="text" name="name" class="text" required>
+                    <input type="text" name="name" id="text" required>
                     </label>
                         </p>
                         <p>
-                            <label for="text">
+                            <label for="textm">
                     メールアドレス<br>
-                    <input type="email" name="email" class="text" required>
+                    <input type="email" name="email" id="textm" required>
                 </label>
                         </p>
                         <p>
-                            <label for="text textarea">
+                            <label for="message">
                         内容<br>
                         <textarea name="textarea" id="message" cols="30" rows="10" class="textarea"></textarea>
                     </label>
@@ -184,11 +213,11 @@
                 </ul>
             </div>
         </footer>
-        </div>
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="js/vegas.min.js"></script>
-<!--        <script src="js/masonry.pkgd.min.js"></script>-->
-        <script src="js/script.js"></script>
-    </body>
-</html>
+    </div>
 
+<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
